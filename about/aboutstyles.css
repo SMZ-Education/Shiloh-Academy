@@ -1,0 +1,98 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    line-height: 1.6;
+}
+
+.site-header, .site-footer {
+    background-color: #002D5B;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.intro-section, .history-section, .mission-section, .values-section {
+    background: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.intro-section h1, .history-section h2, .mission-section h2, .values-section h2 {
+    color: #00437B;
+}
+
+.intro-section p, .history-section p, .mission-section p, .values-section li {
+    font-size: 1rem;
+}
+
+.history-section img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+.values-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.values-section li {
+    background: #e0e0e0;
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+.school__info-container {
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.school__info {
+    flex: 1 1 30%;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+#school__info-logo{
+    font-size: 4rem;
+    padding: 2rem;
+
+}
+.school__title{
+    font-size: 2.5rem;
+    text-align: center;
+}
+.school__text {
+    padding: 10px;
+    display: inline-block;
+}
+
+.school__info i {
+    font-size: 4rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .intro-section, .history-section, .mission-section, .values-section {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .values-section li {
+        padding: 8px;
+    }
+    .school__info {
+        flex-direction: column;
+    }
+}

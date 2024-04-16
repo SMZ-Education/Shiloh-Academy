@@ -1,0 +1,85 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #002D5B;
+    background-color: #FFFFFF;
+    line-height: 1.6;
+}
+.header__showcase img {
+    width: 100%;
+    max-height: 700px;
+    object-fit: cover;
+}
+main {
+    width: 85%;
+    max-width: 1200px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.volunteer-intro h1, .volunteer-area h2 {
+    color: #00437B;
+}
+
+.volunteer-intro h1 {
+    text-align: center;
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+}
+
+.volunteer-intro p {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.volunteer-areas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding-bottom: 3rem;
+}
+
+.volunteer-area {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.volunteer-area h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.volunteer-area p {
+    margin-bottom: 10px;
+}
+.volunteer-area img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; 
+    margin-top: 20px; 
+}
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .volunteer-areas {
+        grid-template-columns: 1fr;
+    }
+
+    main {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .volunteer-intro h1 {
+        font-size: 1.8rem;
+    }
+
+    .volunteer-area h2 {
+        font-size: 1.6rem;
+    }
+}
